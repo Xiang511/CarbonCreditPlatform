@@ -110,8 +110,26 @@ header#calculator{
 .listNews {
     width: 100%;
 }
+.section-news-background img{
+   width: 100%;
+
+}
+.listTxt::after{
+    content: "";
+    margin-top: 0.8em;
+    width: 90%;
+    /* height: 2px; */
+    /* background: #228B22; */
+    border-bottom: .5px dashed #228B22;
+    position: absolute;
+
+}
 @media screen and (max-width:768px){
    .listNews li a{
     margin-top: 3em;
     }      
+   
+    .page.active{
+        overflow: auto;
+    }
 }
